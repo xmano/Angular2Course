@@ -1,0 +1,41 @@
+{
+  "name": "angular2-essential-training",
+  "version": "1.0.0",
+  "author": "Mano",
+  "description": "Code repod for Angular 2 Course.",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "clean": "rimraf app/**/*.js app/**/*.js.map",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "prestart": "npm run clean",
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" "
+  },
+  "dependencies": {
+    "@angular/common": "2.4.6",
+    "@angular/compiler": "2.4.6",
+    "@angular/core": "2.4.6",
+    "@angular/forms": "2.4.6",
+    "@angular/http": "2.4.6",
+    "@angular/platform-browser": "2.4.6",
+    "@angular/platform-browser-dynamic": "2.4.6",
+    "@angular/router": "3.4.6",
+    "systemjs": "0.19.46",
+    "core-js": "2.4.1",
+    "reflect-metadata": "0.1.9",
+    "rxjs": "5.1.0",
+    "zone.js": "0.7.6"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.35",
+    "@types/node": "^7.0.5",
+    "concurrently": "3.1.0",
+    "lite-server": "2.2.2",
+    "rimraf": "2.5.4",
+    "typescript": "~2.0.10"
+  }
+}
