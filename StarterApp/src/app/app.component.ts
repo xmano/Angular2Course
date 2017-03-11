@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  public name;
+  name: any;
   constructor(){
     //this.name = "Angular 2 Rocks!";
   }  
